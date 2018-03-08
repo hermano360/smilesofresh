@@ -295,12 +295,18 @@ img.map {
   max-width: 300px;
 }
 
+.main-meet-doctors{
+  display:flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 
 .meet-ortho-container {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 2rem;
+  max-width: 1000px;
 }
 
 .meet-ortho-container .description {
