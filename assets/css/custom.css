@@ -5,13 +5,32 @@
 	background-color: rgba(0, 0, 0, 0.66);
   border-bottom: 1px solid white;
   color: white;
-  padding: 15px 0;
+  padding: 15px 10px;
   font-size: 20px;
   text-transform: uppercase;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.navbar > .title {
+  display: flex;
+  align-items: flex-start;
+}
+.navbar > .title > img {
+  height: 30px;
+  margin: 0 10px;
 }
 
-.navbar > .title {
-  width: 30%;
+.navbar > .actions {
+  display: flex;
+  font-weight: 600;
+  font-size: 15px;
+}
+.navbar > .actions .action {
+  margin: 0 10px;
+}
+
+/* .navbar > .title {
   text-align: center;
   display: inline-block;
   font-size: 20px;
@@ -19,10 +38,7 @@
   vertical-align: top;
 }
 
-.navbar > .title > img {
-  height: 30px;
-  display: inline-block;
-}
+
 .navbar > .title > span {
   margin-left: 5px;
   vertical-align: top;
@@ -38,19 +54,10 @@
   text-transform: lowercase;
 }
 
-.navbar > .actions {
-  width: 30%;
-  text-align: center;
-  display: inline-block;
-  font-weight: 600;
-  font-size: 15px;
-}
+
 .navbar > .actions > .action {
-  padding: 5px;
-  border: 1px solid white;
-  display: inline-block;
   margin: 0 3%;
-  width: 43%;
+  width: 15%;
 }
 
 .navbar > .hamburger {
@@ -61,7 +68,7 @@
   font-size: 30px;
   color: white;
   cursor: pointer;
-}
+} */
 
 #header .actions .button {
   font-size: 1.2em;
@@ -83,7 +90,7 @@
 #header > .inner > .header-title h1,.header-title-mission{
 	width: 60%;
 	margin-left: 20%;
-	background-color: rgba(0, 0, 0, 0.10);
+	background-color: rgba(0, 0, 0, 0.30);
 	padding: 15px;
   border-radius: 10px;
   margin-bottom: 2rem;
@@ -276,7 +283,6 @@ img.map {
 }
 
 .introPhoto {
-  margin: 2rem 0;
   display: block;
   width: 100%;
   border-radius: 4px;
@@ -284,11 +290,9 @@ img.map {
   position: relative;
 }
 .introPhoto img{
-  width: 50%;
   border-radius: 4px;
   display: block;
   float: right;
-  margin: 2rem;
   max-width: 300px;
 }
 .introPhoto.right img{
@@ -298,9 +302,15 @@ img.map {
   float: left;
 }
 
-.about-text p {
-  margin: 0 2rem 2em 5em;
-  text-align: left;
+.about-text {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 2rem;
+}
+
+.about-text .description {
+  padding: 0 5%;
 }
 
 header.major h2, header.major h4 {
