@@ -86,6 +86,7 @@
 	background-color: rgba(0, 0, 0, 0.10);
 	padding: 15px;
   border-radius: 10px;
+  margin-bottom: 2rem;
 }
 #header > .inner > .header-title h1,.header-title-mission h2 {
   font-weight: 600;
@@ -160,18 +161,10 @@ img.icon {
   margin-left: 15%;
 }
 
-/* .meet-ortho-container{
-  display: flex;
-  align-items: center;
-}
-.meet-ortho {
+.meet-ortho-container .major {
   text-align: center;
 }
 
-.meet-ortho p {
-  width: 70%;
-  margin-left: 15%;
-} */
 
 .main.style1 .info-icons-container {
   border: 3px solid rgba(38, 162, 220, 0.80);
@@ -212,7 +205,7 @@ img.icon {
   color: white;
 }
 .main.style4 .major > h2 {
-  font-size: 2em;
+  font-size: 1.2em;
   color: white;
 }
 header.major:after {
@@ -226,6 +219,11 @@ header.major:after {
 .found-container {
   display: flex;
   justify-content: center;
+  align-items: flex-start;
+}
+
+.found-container .info {
+  width: 30%;
 }
 
 
