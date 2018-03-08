@@ -289,6 +289,7 @@ img.map {
   display: flex;
   justify-content: center;
 }
+
 .introPhoto img{
   border-radius: 4px;
   max-width: 300px;
