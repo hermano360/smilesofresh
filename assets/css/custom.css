@@ -333,7 +333,7 @@ header.major h2, header.major h4 {
     background-color: #2980B9;
 }
 
-.dropdown {
+.dropdown{
     position: relative;
     display: inline-block;
 }
