@@ -27,7 +27,16 @@
 			<div class="actions">
 				<div class="action">Team Fresh</div>
 				<div class="action">Pediatrics</div>
-				<div class="action">Orthodontics</div>
+				<div class="dropdown">
+				<div onclick="expandOrtho()" class="action">Orthodontics</div>
+				  <div id="orthoDropdown" class="dropdown-content">
+				    <a href="ortho.html">Home</a>
+				    <a href="#about">About</a>
+				    <a href="#contact">Contact</a>
+				  </div>
+				</div>
+
+
 				<!-- <div class="hamburger"> <span class="icon fa-bars"></span></div> -->
 			</div>
 
@@ -598,6 +607,8 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/custom.js"></script>
+
 
 	</body>
 </html>
