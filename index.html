@@ -25,11 +25,25 @@
 			<div class="title"> <img class="title" src="assets/css/images/logo.png" alt=""> <span>Smile So Fresh</span> </div>
 
 			<div class="actions">
-				<div class="action">Team Fresh</div>
-				<div class="action">Pediatrics</div>
 				<div class="dropdown">
-				<div onclick="expandOrtho()" class="action">Orthodontics</div>
-				  <div id="orthoDropdown" class="dropdown-content">
+				<div onclick="expandTeam()" class="action team-action">Team Fresh</div>
+					<div id="teamDropdown" class="dropdown-content team-dropdown-content">
+						<a href="ortho.html">Home</a>
+						<a href="#about">About</a>
+						<a href="#contact">Contact</a>
+					</div>
+				</div>
+				<div class="dropdown">
+				<div onclick="expandPed()" class="action ped-action">Pediatrics</div>
+					<div id="pedDropdown" class="dropdown-content ped-dropdown-content">
+						<a href="ortho.html">Home</a>
+						<a href="#about">About</a>
+						<a href="#contact">Contact</a>
+					</div>
+				</div>
+				<div class="dropdown">
+				<div onclick="expandOrtho()" class="action ortho-action">Orthodontics</div>
+				  <div id="orthoDropdown" class="dropdown-content ortho-dropdown-content">
 				    <a href="ortho.html">Home</a>
 				    <a href="#about">About</a>
 				    <a href="#contact">Contact</a>

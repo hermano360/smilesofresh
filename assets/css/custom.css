@@ -28,6 +28,7 @@
 }
 .navbar > .actions .action {
   margin: 0 10px;
+  cursor: pointer;
 }
 
 /* .navbar > .title {
