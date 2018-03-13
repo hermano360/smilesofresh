@@ -359,3 +359,14 @@ header.major h2, header.major h4 {
 .dropdown a:hover {background-color: #ddd}
 
 .show {display:block;}
+
+.about-meet-doctors {
+  text-align: center;
+}
+
+.about-ortho-container {
+  display: inline-block;
+  text-align: center;
+  padding: 2rem;
+  max-width: 1000px;
+}

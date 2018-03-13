@@ -22,34 +22,36 @@
 	</head>
 	<body>
 		<div class="navbar">
-			<div class="title"> <img class="title" src="assets/css/images/logo.png" alt=""> <span>Smile So Fresh</span> </div>
+			<div class="title"> <img class="title" src="assets/css/images/logo.png" alt=""> <span><a href="index.html">Smile So Fresh</a></span> </div>
 
 			<div class="actions">
-				<div class="dropdown">
-				<div onclick="expandTeam()" class="action team-action">Team Fresh</div>
-					<div id="teamDropdown" class="dropdown-content team-dropdown-content">
-						<a href="ortho.html">Home</a>
-						<a href="#about">About</a>
-						<a href="#contact">Contact</a>
+        <div class="dropdown" onmouseover="expandAbout()" onmouseout="hideSection('about')" >
+				<a href="aboutus.html"><div class="action about-action">About Us</div></a>
+					<div id="aboutDropdown" class="dropdown-content about-dropdown-content" >
+						<a href="aboutus.html#pediatric">Pediatric Dentist</a>
+						<a href="aboutus.html#ortho">Ortho Dentist</a>
+						<a href="aboutus.html#awards">Awards</a>
+						<a href="aboutus.html#pubs">Publications</a>
+						<a href="aboutus.html#board">Board Certified</a>
+						<a href="aboutus.html#team">Our Fresh Team</a>
 					</div>
 				</div>
-				<div class="dropdown">
-				<div onclick="expandPed()" class="action ped-action">Pediatrics</div>
-					<div id="pedDropdown" class="dropdown-content ped-dropdown-content">
-						<a href="ortho.html">Home</a>
-						<a href="#about">About</a>
-						<a href="#contact">Contact</a>
+				<div class="dropdown" onmouseover="expandPed()" onmouseout="hideSection('ped')" >
+				<a href="pediatrics.html"><div class="action ped-action">Pediatrics</div></a>
+					<div id="pedDropdown" class="dropdown-content ped-dropdown-content" >
+						<a href="ortho.html">General Info</a>
+						<a href="#about">Services</a>
+						<a href="ortho.html#contact">FAQ</a>
 					</div>
 				</div>
-				<div class="dropdown">
-				<div onclick="expandOrtho()" class="action ortho-action">Orthodontics</div>
+				<div class="dropdown" onmouseover="expandOrtho()" onmouseout="hideSection('ortho')">
+          <a href="ortho.html"><div class="action ortho-action">Orthodontics</div></a>
 				  <div id="orthoDropdown" class="dropdown-content ortho-dropdown-content">
 				    <a href="ortho.html">Home</a>
 				    <a href="#about">About</a>
 				    <a href="#contact">Contact</a>
 				  </div>
 				</div>
-
 
 				<!-- <div class="hamburger"> <span class="icon fa-bars"></span></div> -->
 			</div>
