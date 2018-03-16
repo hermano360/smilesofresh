@@ -284,7 +284,6 @@ img.map {
 }
 
 .introPhoto {
-  display: block;
   border-radius: 4px;
   border: 0;
   display: flex;
@@ -367,6 +366,126 @@ header.major h2, header.major h4 {
 .about-ortho-container {
   display: inline-block;
   text-align: center;
-  padding: 2rem;
+  padding: 4rem 0 0 0;
   max-width: 1000px;
+  width: 75%;
+}
+
+
+.bio-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bio-content-text {
+  flex:1;
+  padding: 0 20px;
+}
+
+.bio-content-photo {
+  flex:1;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.description .header-major {
+  margin: 0 0 .5em 0;
+}
+
+.awards-list li {
+  font-style: italic;
+  text-align: left;
+  margin: 10px 0;
+}
+
+.publications-list li {
+  font-style: italic;
+  text-align: left;
+  margin: 10px 0;
+}
+
+.board-title {
+  font-weight: bold;
+  margin: 0 0 .5em 0;
+}
+
+.staff-photo {
+  width: 75%;
+  margin-left: 12.5%;
+  max-width: 1000px;
+}
+
+.staff-photo img {
+  width: 100%;
+}
+
+.apart-container{
+  display: inline-block;
+  text-align: center;
+  padding: 4rem 0 0 0;
+  max-width: 1000px;
+  width: 75%;
+}
+section.sets-apart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.apart-points-container{
+  padding: 1rem 0 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+
+.apart-point{
+  width: 45%;
+  margin-top: 30px;
+  flex-basis: auto;
+  font-size: 16px;
+}
+
+.apart-point-title {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+  .apart-point{
+    width: 100%;
+    margin-top: 30px;
+    flex-basis: auto;
+    font-size: 16px;
+  }
+
+
+@media screen and (min-width: 650px) {
+  .apart-points-container{
+    justify-content: space-between;
+  }
+
+  .apart-point{
+    width: 45%;
+    margin-top: 30px;
+    flex-basis: auto;
+    font-size: 16px;
+  }
+  .apart-point-title {
+    height: 2em;
+  }
+}
+
+
+@media screen and (min-width: 1000px) {
+  .apart-point{
+    width: 30%;
+    margin-top: 30px;
+    flex-basis: auto;
+    font-size: 16px;
+  }
 }

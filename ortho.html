@@ -21,14 +21,20 @@
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 	</head>
 	<body>
-    <div class="navbar">
+		<div class="navbar">
 			<div class="title"> <img class="title" src="assets/css/images/logo.png" alt=""> <span><a href="index.html">Smile So Fresh</a></span> </div>
 
 			<div class="actions">
-				<div class="dropdown">
-					<a href="aboutus.html"><div class="action team-action">
-						About Us
-					</div></a>
+        <div class="dropdown" onmouseover="expandAbout()" onmouseout="hideSection('about')" >
+				<a href="aboutus.html"><div class="action about-action">About Us</div></a>
+					<div id="aboutDropdown" class="dropdown-content about-dropdown-content" >
+						<a href="aboutus.html#pediatric">Pediatric Dentist</a>
+						<a href="aboutus.html#ortho">Ortho Dentist</a>
+						<a href="aboutus.html#awards">Awards</a>
+						<a href="aboutus.html#pubs">Publications</a>
+						<a href="aboutus.html#board">Board Certified</a>
+						<a href="aboutus.html#team">Our Fresh Team</a>
+					</div>
 				</div>
 				<div class="dropdown" onmouseover="expandPed()" onmouseout="hideSection('ped')" >
 				<a href="pediatrics.html"><div class="action ped-action">Pediatrics</div></a>
@@ -47,81 +53,105 @@
 				  </div>
 				</div>
 
+				<div class="dropdown" onmouseover="" onmouseout="" >
+				<a href="apart.html"><div class="action apart-action">What Sets Up Apart</div></a>
+				</div>
+
 				<!-- <div class="hamburger"> <span class="icon fa-bars"></span></div> -->
 			</div>
 
 		</div>
 
 
-		<!-- One -->
-			<section id="one" class="main style1 main-meet-doctors">
-				<!-- Temporarily Commenting This Out -->
-				<!-- <div class="container">
-					<div class="row 150%">
-						<div class="12u">
-							<div class="info-icon-container">
-								<div class="info-icons">
-									<div class="info-icons-container">
-										<span class="icon info-icon fa-stethoscope"></span>
-									</div>
-									<div class="info-icons-text">Professional Environment</div>
-								</div>
-								<div class="info-icons">
-									<div class="info-icons-container">
-										<span class="icon info-icon fa-laptop"></span>
-									</div>
-									<div class="info-icons-text">Technology</div>
-								</div>
-								<div class="info-icons">
-									<div class="info-icons-container">
-										<span class="icon info-icon fa-money"></span>
-									</div>
-									<div class="info-icons-text">Affordable Treatment</div>
-							</div>
-								<div class="info-icons">
-									<div class="info-icons-container">
-										<span class="icon info-icon fa-users"></span>
+		<div class="about-ortho-container" id="awards">
+			<header class="major">
+				<h2>Awards</h2>
+			</header>
+			<ul class="awards-list">
+				<li>Pacific Coast Orthodontic Society and World Implant Orthodontic Conference Case Presentation Award (2014)</li>
+				<li>Los Angeles Center for Oral and Maxillofacial Surgery Outstanding Case Award (2013)</li>
+				<li>American Student Dental Association Outstanding Leadership Award (2010)</li>
+				<li>Harvard Medical School Enchrichment Program Award (2009)</li>
+				<li>Harvard School of Dental Medicine Student Scholarship Award (2009)</li>
+				<li>Flinn Foundation Scholar (2004)</li>
+				<li>Arizona State University Leadership and President’s Scholarship Award (2004)</li>
+				<li>Robert C. Byrd Honors Scholarship (2004)</li>
+			</ul>
+		</div>
 
-									</div>
-									<div class="info-icons-text">Knowledgeable Staff</div>
+
+			<!-- Three -->
+				<section id="three" class="main style3 special">
+					<div class="container">
+						<header class="major">
+							<h2>Make An Appointment</h2>
+						</header>
+						<p>Providing convenient hours to fit your busy schedule, feel free to contact us to start your journey towards a great smile. </p>
+						<p>Serving patients from Harriman, Monroe, Middletown, Cornwall, Stony Point, Haverstraw,
+							Peekskill, West Haverstraw, Newburgh, Suffern, Ringwood, Cortland,
+							 New City, Monsey, Beacon, West Milford, Nanuet and all surrounding
+							 areas.</p>
+						<div class="button">Make An Appointment</div>
+						<!-- <div class="row 150%">
+							<div class="4u 12u$(medium)">
+								<span class="image fit"><img src="images/pic02.jpg" alt="" /></span>
+								<h3>Magna feugiat lorem</h3>
+								<p>Adipiscing a commodo ante nunc magna lorem et interdum mi ante nunc lobortis non amet vis sed volutpat et nascetur.</p>
+								<ul class="actions">
+									<li><a href="#" class="button">More</a></li>
+								</ul>
+							</div>
+							<div class="4u 12u$(medium)">
+								<span class="image fit"><img src="images/pic03.jpg" alt="" /></span>
+								<h3>Magna feugiat lorem</h3>
+								<p>Adipiscing a commodo ante nunc magna lorem et interdum mi ante nunc lobortis non amet vis sed volutpat et nascetur.</p>
+								<ul class="actions">
+									<li><a href="#" class="button">More</a></li>
+								</ul>
+							</div>
+							<div class="4u$ 12u$(medium)">
+								<span class="image fit"><img src="images/pic04.jpg" alt="" /></span>
+								<h3>Magna feugiat lorem</h3>
+								<p>Adipiscing a commodo ante nunc magna lorem et interdum mi ante nunc lobortis non amet vis sed volutpat et nascetur.</p>
+								<ul class="actions">
+									<li><a href="#" class="button">More</a></li>
+								</ul>
+							</div>
+						</div> -->
+					</div>
+				</section>
+
+				<section id="two" class="main style4">
+					<div class="container">
+						<div class="row 150% found-container">
+							<div class="info">
+								<header class="major">
+									<h2>Map</h2>
+								</header>
+								<div class="map-container">
+									<a target="_black" rel="noreferrer noopener" href="https://www.google.com/maps/place/Monrovia+Family+Dentistry/@39.578879,-86.482962,17z/data=!4m5!3m4!1s0x886c9614c62fb74f:0xbafa2060123f7ea8!8m2!3d39.5786957!4d-86.4829629"><img class="map" src="https://daks2k3a4ib2z.cloudfront.net/5a0c720b9acb79000133d2a2/5a0c720b9acb79000133d296_map-p-800.jpeg" /></a>
 								</div>
-								<div class="info-icons">
-									<div class="info-icons-container">
-										<span class="icon info-icon fa-clock-o"></span>
-									</div>
-									<div class="info-icons-text">Weekend Hours</div>
 								</div>
+							<div class="info">
+								<header class="major">
+									<h2>Contact Information</h2>
+								</header>
+								<div>123 New Monrovia Avenue</div>
+								<div>Monrovia, CA 91010</div>
+								<div>626-815-6304</div>
+								<div>howard@smilesofresh.net</div>
+							</div>
+							<div class="info">
+								<header class="major">
+									<h2>Hours</h2>
+								</header>
+								<div>Monday 10AM - 6PM</div>
+								<div>Thursday 10AM - 6PM</div>
+								<div>Saturday 9AM - 1PM</div>
 							</div>
 						</div>
-
-
-						</div> -->
-						<div class="meet-ortho-container">
-							<div class="description">
-								<header class="major">
-									<h2>Meet Your Pediatric Dentist</h2>
-									<h4>Dr. Christine Chu, DDS</h4>
-								</header>
-								<p>Your Orange County Orthodontist, Dr. Patel aims to provide top quality care in a patient-friendly environment.
-								Graduating from NYU and Columbia University, Dr. Patel delivers high-quality treatment with outstanding results. Expect to be treated with the best of care.</p>
-							</div>
-						<span class="introPhoto"><img src="http://c2-preview.prosites.com/213194/ed/PageMeetTheTeam/8ca25312-a57a-4827-9733-b1e165b20a6e_lg.jpg" alt="" /></span>
 					</div>
-					<div class="meet-ortho-container">
-						<span class="introPhoto"><img src="http://c2-preview.prosites.com/213194/ed/PageMeetTheTeam/8ca25312-a57a-4827-9733-b1e165b20a6e_lg.jpg" alt="" /></span>
-						<div class="description">
-						<header class="major">
-							<h2>Meet Your Orthodontist</h2>
-							<h4>Dr. Howard Chu, DMD, MS</h4>
-						</header>
-							<p>Your Orange County Orthodontist, Dr. Patel aims to provide top quality care in a patient-friendly environment.
-							Graduating from NYU and Columbia University, Dr. Patel delivers high-quality treatment with outstanding results. Expect to be treated with the best of care.</p>
-					</div>
-				</div>
-				</div>
-			</section>
-
-
+				</section>
 
 
 
