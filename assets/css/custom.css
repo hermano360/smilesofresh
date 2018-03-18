@@ -489,3 +489,15 @@ section.sets-apart {
     font-size: 16px;
   }
 }
+
+.row-border-bottom {
+  margin-top: 1em;
+  border-bottom: 1px solid black;
+}
+.row-border-bottom-alt {
+  margin-top: 1em;
+}
+
+.row-border-bottom h3, .row-border-bottom-alt h3 {
+  font-weight: 600;
+}
