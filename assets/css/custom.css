@@ -1,7 +1,7 @@
 .navbar {
   position: fixed;
   z-index: 2;
-  width: 100%;
+  width: 100vw;
 	background-color: rgba(0, 0, 0, 0.66);
   border-bottom: 1px solid white;
   color: white;
@@ -246,6 +246,7 @@ header.major:after {
   color: black;
   background-image: none;
   font-size: 16px;
+  margin-bottom: 60px;
 }
 
 img.map {
@@ -552,4 +553,67 @@ section.sets-apart {
     	#carousel ul li {
     		width:600px;
     	}
+  }
+
+  .contact-us-labels {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    border-radius: 4px;
+    border: none;
+    color: inherit;
+    display: block;
+    outline: 0;
+    padding: 0 1em;
+    text-decoration: none;
+    width: 100%;
+  }
+
+  .dropdown.hamburger-dropdown {
+    font-size: 30px;
+    margin: 0 10px;
+  }
+
+  @media screen and (max-width: 800px) {
+    .dropdown.main-dropdown {
+      display: none;
+    }
+  }
+  @media screen and (min-width: 800px) {
+    .dropdown.hamburger-dropdown {
+      display: none;
+    }
+  }
+
+  .side-dropdown-content.show {
+    right:0;
+  }
+  .side-dropdown-content {
+    text-align: center;
+    font-weight: normal;
+    text-transform: capitalize;
+    font-size: 15px;
+  }
+
+  .footnavbar {
+    position: fixed;
+    bottom:0;
+    z-index: 2;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.66);
+    border-top: 1px solid white;
+    color: white;
+    padding: 15px 10px;
+    font-size: 20px;
+    text-transform: capitalize;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  @media screen and (max-width: 550px) {
+    .city-footer {
+      display: none;
+    }
   }

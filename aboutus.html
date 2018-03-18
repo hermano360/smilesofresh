@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Smile So Fresh</title>
+		<title>About Us</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="description" content="Baldwin Park Dental Center is a multi-specialty family owned professional dental group dedicated to general, family, cosmetic and pediatric dentistry with services including dental exams, cleanings, x-rays, teeth whitening, veneers, crowns, orthodontics (braces &amp; Invisalign), dental implants, and more. Our doctors include general dentists, and board-certified specialists trained in pediatric dentistry, periodontics, orthodontics, oral surgery, and endodontics (root canals). Please call our office in Baldwin Park, California to schedule your next appointment. We look forward to hearing from you!">
@@ -25,7 +25,7 @@
 			<div class="title"> <img class="title" src="assets/css/images/logo.png" alt=""> <span><a href="index.html">Smile So Fresh</a></span> </div>
 
 			<div class="actions">
-        <div class="dropdown" onmouseover="expandAbout()" onmouseout="hideSection('about')" >
+				<div class="dropdown main-dropdown" onmouseover="expandAbout()" onmouseout="hideSection('about')" >
 				<a href="aboutus.html"><div class="action about-action">About Us</div></a>
 					<div id="aboutDropdown" class="dropdown-content about-dropdown-content" >
 						<a href="aboutus.html#pediatric">Pediatric Dentist</a>
@@ -37,7 +37,16 @@
 						<a href="examples.html">Examples</a>
 					</div>
 				</div>
-				<div class="dropdown" onmouseover="expandPed()" onmouseout="hideSection('ped')" >
+
+				<div class="dropdown  main-dropdown" onmouseover="expandContact()" onmouseout="hideSection('contact')">
+					<a href="contact.html"><div class="action contact-action">Contact Us</div></a>
+					<div id="contactDropdown" class="dropdown-content contact-dropdown-content">
+						<a href="contact.html#call-us-now">Call Us Now</a>
+						<a href="contact.html#appointment">Appointment</a>
+					</div>
+				</div>
+
+				<div class="dropdown main-dropdown" onmouseover="expandPed()" onmouseout="hideSection('ped')" >
 				<a href="pediatrics.html"><div class="action ped-action">Pediatrics</div></a>
 					<div id="pedDropdown" class="dropdown-content ped-dropdown-content" >
 						<a href="pediatrics.html#general">General Info</a>
@@ -46,23 +55,34 @@
 						<a href="pediatrics.html#emergencies">Emergencies</a>
 					</div>
 				</div>
-				<div class="dropdown" onmouseover="expandOrtho()" onmouseout="hideSection('ortho')">
-          <a href="ortho.html"><div class="action ortho-action">Orthodontics</div></a>
-				  <div id="orthoDropdown" class="dropdown-content ortho-dropdown-content">
+				<div class="dropdown main-dropdown" onmouseover="expandOrtho()" onmouseout="hideSection('ortho')">
+					<a href="ortho.html"><div class="action ortho-action">Orthodontics</div></a>
+					<div id="orthoDropdown" class="dropdown-content ortho-dropdown-content">
 						<a href="ortho.html#junior">Junior</a>
-						<a href="ortho.html#teen">Teen</a>
+						<a href="ortho.html#teens">Teens</a>
 						<a href="ortho.html#adults">Adults</a>
 						<a href="ortho.html#braces">Braces</a>
 						<a href="ortho.html#invisalign">Invisalign</a>
 						<a href="ortho.html#beforeafter">Before and After</a>
-				  </div>
+					</div>
 				</div>
 
-				<div class="dropdown" onmouseover="" onmouseout="" >
-				<a href="apart.html"><div class="action apart-action">What Sets Up Apart</div></a>
+				<div class="dropdown main-dropdown" onmouseover=""  >
+					<a href="apart.html"><div class="action apart-action">What Sets Us Apart</div></a>
 				</div>
 
-				<!-- <div class="hamburger"> <span class="icon fa-bars"></span></div> -->
+				<div class="hamburger dropdown hamburger-dropdown side-dropdown" onclick="expandSide()">
+					<div class="action side-action"><span class="icon fa-bars side-bars"></span></div>
+					<div id="sideDropdown" class="dropdown-content side-dropdown-content">
+						<a href="index.html">Home</a>
+						<a href="contact.html">Contact Us</a>
+						<a href="pediatrics.html">Pediatrics</a>
+						<a href="ortho.html">Orthodontics</a>
+						<a href="apart.html">What Sets Us Apart</a>
+						<a href="contact.html#appointment">Appointment</a>
+					</div>
+				</div>
+
 			</div>
 
 		</div>
@@ -270,17 +290,24 @@
 
 
 		<!-- Footer -->
-			<section id="footer">
-				<!-- <ul class="icons">
-					<li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
-					<li><a href="#" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
-					<li><a href="#" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
-					<li><a href="#" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
-					<li><a href="#" class="icon alt fa-envelope"><span class="label">Email</span></a></li>
-				</ul> -->
-				<div>Copyright 2012 - 2018  |   All Rights Reserved</div>
+		<section id="footer">
+			<ul class="icons">
+				<li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
+				<li><a href="#" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
+				<li><a href="#" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
+				<li><a href="#" class="icon alt fa-envelope"><span class="label">Email</span></a></li>
+			</ul>
+			<div>Copyright 2012 - 2018  |   All Rights Reserved</div>
+			<!-- <ul class="copyright">
+				<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+			</ul> -->
+		</section>
 
-			</section>
+		<section class="footnavbar">
+			<div class="title"> <span><a href="tel:626-815-6304">626-815-6304</a></span> </div>
+			<div class="title"> <span><a target="_blank" rel="noreferrer noopener" href="https://www.google.com/maps/place/Monrovia/@34.133158,-118.0054925,17z/data=!3m1!4b1!4m5!3m4!1s0x80c2d976a7be55df:0x20ba4f7e02d95679!8m2!3d34.1331536!4d-118.0032985">
+				123 New Monrovia Avenue <span class="city-footer">, Monrovia, CA</span></a></span> </div>
+		</section>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>

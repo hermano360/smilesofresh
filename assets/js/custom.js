@@ -11,6 +11,12 @@ function expandPed(){
 function expandAbout(){
   showDropdownElements('aboutDropdown')
 }
+function expandContact(){
+  showDropdownElements('contactDropdown')
+}
+function expandSide(){
+  showDropdownElements('sideDropdown')
+}
 
 
 function hideSection(section){
@@ -26,7 +32,7 @@ function hideSection(section){
 
 // Close the dropdown if the user clicks outside of it
 window.onclick = function(event) {
-
+  console.log(event.target)
   if (!event.target.matches('.ortho-action')) {
     hideSection('ortho')
   }
@@ -38,6 +44,13 @@ window.onclick = function(event) {
   if (!event.target.matches('.about-action')) {
     hideSection('about')
   }
+  if (!event.target.matches('.contact-action')) {
+    hideSection('contact')
+  }
+  if (!event.target.matches('.side-bars')) {
+    hideSection('side')
+  }
+
 
 }
 
