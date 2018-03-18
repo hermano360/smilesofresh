@@ -617,3 +617,7 @@ section.sets-apart {
       display: none;
     }
   }
+
+  .page-body {
+    padding: 0 10px;
+  }
