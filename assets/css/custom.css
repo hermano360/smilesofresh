@@ -621,3 +621,42 @@ section.sets-apart {
   .page-body {
     padding: 0 10px;
   }
+
+  .main-icon {
+    height: 4em;
+    width: 4em;
+  }
+  .main-icon img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .image.left, .image.right {
+    max-width: 100%;
+  }
+
+  .middle {
+    text-align: center;
+  }
+
+  .layout-hide {
+    display: none
+  }
+
+  .layout-show {
+    display:block;
+  }
+
+  @media screen and (max-width: 736px) {
+    .layout-spacing {
+      max-width: 50%;
+      margin-left: 25%;
+    }
+    .layout-hide {
+      display: block;
+    }
+
+    .layout-show {
+      display: none;
+    }
+  }
