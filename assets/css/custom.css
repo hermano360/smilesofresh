@@ -660,3 +660,26 @@ section.sets-apart {
       display: none;
     }
   }
+
+  .container .make-appointment {
+    width: 75%;
+    margin-left: 12.5%;
+  }
+
+.found-dentist {
+    width: 75%;
+    margin-left: 12.5%;
+  }
+
+  .found-dentist .button{
+    background-color: rgba(38, 162, 220, 0.80)
+  }
+
+  .contact-info {
+    margin-top: 10px;
+  }
+
+  .map-container {
+    width: 75%;
+    margin-left: 12.5%;
+  }
